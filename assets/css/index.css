@@ -103,7 +103,7 @@ nav {
     display: none;
   }
   
-  @media (max-width: 981px) {
+  @media only screen and (max-width: 734px) {
     nav {
       padding: 15px 20px;
       position: relative;
@@ -227,7 +227,7 @@ main .big-img  {
     border-radius: 20px;
 }
 
-@media (max-width: 981px) {
+@media only screen and (max-width: 734px) {
     main .big-img {
     width: 100%;
     border-radius: 0;
