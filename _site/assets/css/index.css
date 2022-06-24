@@ -227,7 +227,7 @@ main .big-img  {
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 734px) {
+@media only screen and (max-width: 926px) {
     main .big-img {
     width: 100%;
     border-radius: 0;
@@ -269,10 +269,4 @@ footer p span:hover {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* End Font Import */
-
-
-
-
-
-
 
