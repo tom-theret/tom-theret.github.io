@@ -1,0 +1,102 @@
+site_name: Tom Theret
+site_url: https://tom-theret.github.io
+edit_uri: edit/main/docs/
+nav:
+  - Accueil: 'index.md'
+  - Stage 1: 
+    - Introduction: 'st1/intro.md'
+    - Compétences:
+      - B.1.3 - Développer la présence en ligne de l’organisation: 'st1/3.md'
+      - B.1.4 - Travailler en mode projet: 'st1/4.md'
+  - Stage 2: 
+    - Introduction: 'st2/intro.md'
+    - Compétences:
+      - B.1.1 - Gérer le patrimoine informatique: 'st2/1.md'
+      - B.1.2 - Répondre aux incidents et aux demandes d’assistance et d’évolution: 'st2/2.md'
+      - B.1.4 - Travailler en mode projet: 'st2/4.md'
+  - Attelier Pro: 
+    - Introduction: 'ap/intro.md'
+    - Compétences:
+      - B.1.4 - Travailler en mode projet: 'ap/4.md'
+      - B.1.5 - Mettre à disposition des utilisateurs un service informatique: 'ap/5.md'
+      - B.1.6 - Organiser son développement professionnel: 'ap/6.md'
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  language: fr
+  favicon: assets/beta.png
+  font:
+    text: Noto Sans
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.footer
+    - content.action.edit
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate 
+    - navigation.sections
+plugins:
+  - git-revision-date-localized:
+      locale: fr
+      type: timeago
+      fallback_to_build_date: true
+copyright: Copyright &copy; 2024 Tom Theret - GPLv3
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tom-theret
+    - icon: fontawesome/brands/linkedin
+      link: www.linkedin.com/in/tom-theret
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - abbr
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+extra_css:
+  - stylesheets/extra.css
